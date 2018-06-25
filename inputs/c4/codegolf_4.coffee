@@ -1,0 +1,7 @@
+
+game = "523764918"
+
+CODEGOLF_METHOD_PLACEHOLDER
+
+f game
+

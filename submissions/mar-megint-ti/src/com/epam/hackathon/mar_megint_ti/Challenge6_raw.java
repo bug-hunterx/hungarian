@@ -1,0 +1,1 @@
+static void f(int c){int o;if(c<2000)o=u(c,100);else if(c<5000)o=u(c,500);else o=r((int)(c*1.1),500);String s;int t=o-c;if (t==0||t>1500)s="PAID BY CARD";else if(t%100!=0)s="KEEP THE CHANGE YOU FILTY ANIMAL";else s="HERE IS "+o;System.out.print(s);}static int u(int c,int g){int r=c%g;return r==0?c:c-r+g;}static int r(int c,int g){int r=c%g;return r==0?c:r<g/2?c-r:c-r+g;}

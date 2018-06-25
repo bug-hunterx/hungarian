@@ -1,0 +1,1 @@
+function f(s){v=3;g=h=i=0;c=console;try{s.split(" ").forEach(q=>{u=q[0];if(!isNaN(q)){g+=1*q;v+=r=(g/100)>>0;g-=r*100}else if(u=="1")v++;if(/[gpk]/.test(u)){if(!i){if(h)h=0;else{v--}}}if(u=="M")h=1;if(u=="S")i=3;if(u=="B"||u=="P")throw "WIN";i-=i>0;if(!v)throw "GAME OVER";});c.log("???")}catch(e){c.log(e)}}

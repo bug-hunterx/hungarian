@@ -1,0 +1,1 @@
+sub f{$b=$input=~s#/\|\|\\#//\\\\#rg=~s#/ #__#rg=~s# \\#__#rg=~s#/\|(?!\\)#//#rg=~s#(?<!/)\|\\#\\\\#rg=~s#/$#__#r=~s#^\\#__#r;if($b eq $input){print $b}else{$input=$b;f()}}

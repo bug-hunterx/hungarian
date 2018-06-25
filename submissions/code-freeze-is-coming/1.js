@@ -1,0 +1,1 @@
+function f(r){for(var o={},n="",t=0;t<r.length;t++){var c=r.charAt(t);o[c]?o[c]++:o[c]=1}var f=Object.keys(o).sort(function(r,n){return o[r]>o[n]?1:o[r]<o[n]?-1:r>n?1:n>r?-1:0});f.forEach(function(r){for(var t=0;t<o[r];t++)n+=r}),console.log(n)}

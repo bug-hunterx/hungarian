@@ -1,0 +1,1 @@
+a=$(echo "$@"|grep -o " "|wc -l);echo "$@"|grep -o .|sort -r|uniq -c|LANG=C sort|awk '{ print $1" "$2}'|awk '{for(i=0;i<$1;i++) print $2" "$1 }'|awk '{print $1}'|tr -d '\n'|sed "s/$a/ /g"

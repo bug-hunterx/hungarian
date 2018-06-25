@@ -1,0 +1,1 @@
+static void f(String s){String t=s,p="\\\\";do{s=t;t=t.replace("/||\\","//"+p);t=t.replace("/ ","__");t=t.replaceAll("/$","__");t=t.replaceAll("/\\|([^\\\\])","//$1");t=t.replaceAll("/\\|$","//");t=t.replace(" \\","__");t=t.replaceAll("^"+p,"__");t=t.replaceAll("([^/])\\|"+p,"$1"+p+p);t=t.replaceAll("^\\|"+p,p+p);}while(s!=t);System.out.println(t);}

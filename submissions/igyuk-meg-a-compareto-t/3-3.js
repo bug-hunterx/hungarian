@@ -1,0 +1,5 @@
+function f(){
+m={}
+">\n:0Ghostbusters:1call:2Who:3I:4gonna:5you:6no:7ghost:8of:9ya:aafraid:bain't:cIf:dit:eyour:fbetter:gsomething:hyeah:igood:jthe:kAnd:la:mthink:nyou're:oalone:pcan:qthere's:rthrough:stell:thead:uthings:vAn:winvisible:xman:ySleeping:zin:Abed:Ball:Cseeing:DPick:Eup:Flook:Gphone:Hhere:Ilikes:Jgirls:KYeah:Ldon't:Mweird:Nyou've:Ohad:Pneighborhood:Qdose:RFreaky:Sbaby:TYou:UIn:VLemme:WRunning:XBustin':Ymakes:Zme:`feel:~Don't:!get:@caught:#When:$comes:%door:^Unless:&just:*want:(some:)more:-strange:_can't:=hear:+Louder".split(':').forEach((x)=>m[x[0]]=x.substring(1))
+console.log('0>cqg->U5P>2541>0>cqgM>kdLFi>2541>0>>3ba867>3ba867>>cnCu>Wret>2p51>0>vwx>yzeA>2541>0>>3ba867>3ba867>>2541>0>cnBo>DEjG>k1>0>>3ba867>3HdIjJ>3ba867>Khhh>>2941>0>>cNOlQ8l>R7S>Tf1>0>>Vs9g>XYZ`i>>3ba867>3ba867>>~!@o66>>0>>#d$re%>^5&*()>3m5f1>0>>2941>0>>2941>0>>3m5f1>0>>2941>0>>3_=5>2941>0>>+>0>>2941>0>>2p91>0>>2941>0'.split('').map((x)=>m[x]).join(' ').replace(/ *\n +/g, "\n"))
+}

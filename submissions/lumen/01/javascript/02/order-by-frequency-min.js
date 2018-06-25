@@ -1,0 +1,1 @@
+function f(o){var r={},n=[],c="";o.split("").forEach(o=>{var n=o.charCodeAt(0);r[n]?r[n]++:r[n]=1}),Object.keys(r).sort((o,r)=>o-r).forEach(function(o){var c,f=n[c=r[o]];f?f.push(o):n[c]=[o]}),n.forEach((o,r)=>{o.forEach(o=>{for(var n=0;r>n;n++)c+=String.fromCharCode(o)})}),console.log(c)}

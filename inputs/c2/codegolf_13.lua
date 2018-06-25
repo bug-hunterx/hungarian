@@ -1,0 +1,7 @@
+
+CODEGOLF_METHOD_PLACEHOLDER
+
+local ARG0 = "ASD!@#Vcx"
+
+f(ARG0);
+

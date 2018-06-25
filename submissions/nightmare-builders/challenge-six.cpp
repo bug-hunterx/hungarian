@@ -1,0 +1,2 @@
+#include <cmath>
+void f(int t){int r=t<2000?ceil(t/100.0)*100:t<5000?ceil(t/500.0)*500:round(trunc(t*1.1)/500.0)*500;if(r-t>1500||t-r==0)std::cout<<"PAID BY CARD";else if((r-t)%100!=0)std::cout<<"KEEP THE CHANGE YOU FILTY ANIMAL";else{std::cout<<"HERE IS "<<r;}}

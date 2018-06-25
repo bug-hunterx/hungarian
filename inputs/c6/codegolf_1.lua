@@ -1,0 +1,7 @@
+
+CODEGOLF_METHOD_PLACEHOLDER
+
+local ARG0 = 500
+
+f(ARG0);
+

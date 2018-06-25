@@ -1,0 +1,1 @@
+echo $ARG0|grep -o .|sort|uniq -c|cut -d' ' -f7,8|LC_ALL=C sort -k1,2|while read s;do n=`echo $s|cut -c1`;s=`echo $s|cut -c3`;s=`printf "%1s\n" $s`;v=$(printf "%-${n}s" "$s");echo -n "${v// /$s}";done

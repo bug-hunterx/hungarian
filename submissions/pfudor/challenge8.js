@@ -1,0 +1,1 @@
+function f(o,f,n){var r=[],l=f*n,c=o.length,e=Math.ceil(c/l),t="";for(k=0;k<f;k++)for(j=0;j<e;j++)for(r[j]=r[j]||[],i=0;i<n;i++)r[j][i+k*n]=o[n*k*e+j*n+i]||" ";for(j=0;j<e;j++)for(i=0;i<l;i++)t+=r[j][i],1==f&&1==n?t+="\n":1==n&&i<1?t+="|":i>0&&i%(l-1)==0?t+="\n":(i+1)%n==0&&(t+="|");console.log(t)}

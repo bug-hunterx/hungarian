@@ -1,0 +1,1 @@
+static void f(String g){int[]r=new int[3],c=new int[3],d=new int[2];int t=-1;char s='?';for(char h:g.toCharArray()){int x=((int)h)-49;if("159".contains(h+"")){d[0]+=t;}if("357".contains(h+"")){d[1]+=t;}c[x%3]+=t;r[x/3]+=t;if(r[x/3]==-3||c[x%3]==-3||d[0]==-3||d[1]==-3){s='O';break;}else if(r[x/3]==3||c[x%3]==3||d[0]==3||d[1]==3){s='X';break;}t*=-1;}System.out.println(s);}

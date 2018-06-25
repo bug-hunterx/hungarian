@@ -1,0 +1,1 @@
+static void f(String s){int l=s.length();int[] f={2,3,5,7,11,13,17,19,23},w={30,1001,7429,238,627,1495,506,935},o=new int[l%2==0?l/2:l/2+1],x=new int[l/2];int n=1,m=1;String r="?";z:for(int i=0;i<l;i++){if(i%2==0){m*=f[s.charAt(i)-49];for(int p:w){if(m%p==0){r="O";break z;}}}else{n*=f[s.charAt(i)-49];for(int p:w){if(n%p==0){r="X";break z;}}}}System.out.print(r);}

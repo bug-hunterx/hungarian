@@ -1,0 +1,1 @@
+void f(char*s,int c,int w){int l=strlen(s),q=(l-1)/c/w+1,r,j,p,k;for(r=0;r<q;r++){for(j=0;j<c;j++){printf(j>0?"|":"");p=q*w*j+r*w;for(k=0;k<w;k++){putchar(p<l?s[p]:' ');p++;}}printf("\n");}}

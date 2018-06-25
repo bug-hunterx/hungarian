@@ -1,0 +1,4 @@
+@hackathonbot: submit solutions/Solution08.c 8
+@hackathonbot: show scores 8
+@hackathonbot: show challenge 7
+@hackathonbot: show scores A-P-I

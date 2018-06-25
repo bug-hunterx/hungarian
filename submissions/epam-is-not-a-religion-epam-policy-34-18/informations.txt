@@ -1,0 +1,7 @@
+Run golfscript:
+with input
+echo my input | ruby golfscript.rb my_script.gs
+without input
+echo | ruby golfscript.rb my_script.gs
+echo | ruby golfscript.rb Hello.gs
+

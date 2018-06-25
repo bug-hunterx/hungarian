@@ -1,0 +1,3 @@
+void f(char*s,int m){int a[99]={0},b[99]={0},u[99]={0},e[99]={0},j=0,p=0,y=0,d=1,c=0;char* r=s;while(*++r)if(*r<11)c++;int t=c>3?c+1:c;while(*s){if(*s<11)c--;else if(*s!='|'){a[j]=(c>3?c+1:c);u[j]=*s++-48;s++;b[j]=*s-48;j++;}s++;}c=0;int i,n=0;for(;;){int x=0;for(i=0;i<j;i++)if(c==b[i]&&e[c]){p-=e[c];e[c]=0;x++;}if(x)y++;for(i=0;i<j;i++){if(a[i]==c&&u[i]&&(c==0||x)){int z=b[i]-c;if(d==((z>0)-(z<0))){if(p+u[i]<m){p+=u[i];e[b[i]]+=u[i];if(n<b[i])n=b[i];u[i]=0;}else{
+#define G(X)printf(X" after %d stops at %d floor",y,c);return;
+G("polite")}}}}if(p<1){G("lonely")}c+=d;if(c==t||n<c||t<=3&&n==c)d=-1;else if(c<1)d=1;}}

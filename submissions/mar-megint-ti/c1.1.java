@@ -1,0 +1,1 @@
+static void f(String s){int[]f=new int[256];int i,j,k,l=s.length();for(i=l-1;i>=0;--i){char c=s.charAt(i);++f[c];}for(i=1;i<=l;i++){for(j=0;j<256;j++){if(f[j]==i){for(k=0;k<f[j];k++)System.out.print((char) j);}}}}

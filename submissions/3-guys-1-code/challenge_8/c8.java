@@ -1,0 +1,1 @@
+static int round(int a,int b){return((a+b-1)/b)*b;}static void f(String s,int c,int w){int l=s.length();int h=(c*w);int m=round(l,h);int n=m/(h);char[]k=new char[m-l];Arrays.fill(k,' ');s=s+new String(k);String[]t=s.split("(?<=\\G.{"+w+"})");for(int i=0;i<n;i++){String r="";for(int j=0;j<c;j++){if(j!=c-1){r+=t[(j)*n+i]+"|";}else{r+=t[(j)*n+i];}}System.out.println(r);}}

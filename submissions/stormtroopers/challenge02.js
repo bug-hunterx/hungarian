@@ -1,0 +1,1 @@
+function f(s){r=[];["`1234567890-=~!@#$%^&*()_+","qwertyuiop[]\\QWERTYUIOP{}","asdfghjkl;'ASDFGHJKL:\"|","zxcvbnm,./ZXCVBNM<>?"].forEach((a,i)=>{for(j in a){l=a[j];for(n in s){u=s[n];if(u===l)r[i]=r[i]?r[i]+l:l;}}});r.sort((q,w)=>q.length-w.length);console.log(r[0].replace(/(.)\1+/g,"$1"))}

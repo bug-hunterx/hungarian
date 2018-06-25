@@ -1,0 +1,61 @@
+function f() {
+var c = "Ghostbusters";
+var q = " gonna call" + "\n" + c;
+var a = "Who ya" + q + "\n";
+var b = "I ain't afraid of no ghost";
+var d = "Who you" + q;
+var e = "I think you better call\n"+c;
+var f = d + "\n" + c;
+
+var w = "\n" + b + "\n" + b + "\n";
+
+var szoveg = [c,
+"If there's something strange\nIn you neighborhood",
+d,
+"If there's something weird\nAnd it don't look good",
+d,
+w,
+"If you're seeing things\nRunning through your head\nWho can you call",
+c,
+"An invisible man\nSleeping in your bed",
+d,
+w,
+d,
+"If you're all alone\nPick up the phone\nAnd call",
+c,
+"",
+b,
+"I here it likes the girls",
+b,
+"Yeah yeah yeah yeah\n",
+a,
+"If you've had a dose of a\nFreaky ghost baby\nYou better call",
+c,
+"\nLemme tell ya something",
+"Bustin' makes me feel good",
+w,
+"Don't get caught alone no no",
+"",
+c,
+"\nWhen it comes through your door\nUnless you just want some more",
+e,
+"",
+a,
+a,
+e,
+"",
+a,
+"I can't hear you",
+a,
+"Louder",
+c,
+"",
+a,
+"Who can ya call",
+c,
+"",
+a];
+
+console.log(szoveg.join("\n").slice(0,-1));
+};
+f();

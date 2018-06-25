@@ -1,0 +1,7 @@
+
+input = "ZXCVBNMMNBVCZQQwerASdf"
+
+CODEGOLF_METHOD_PLACEHOLDER
+
+f input
+

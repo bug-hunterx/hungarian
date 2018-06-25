@@ -1,0 +1,1 @@
+function f(o){for(x=[],y=2,i=0;i<o.length;i++)for(x[o[i]-1]=y,y=2==y?5:2,j=0;r=[[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]][j];j++)switch(x[r[0]]*x[r[1]]*x[r[2]]){case 8:return void console.log("O");case 125:return void console.log("X")}console.log("?")}

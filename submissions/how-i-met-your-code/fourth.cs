@@ -1,0 +1,1 @@
+static void f(String s) {String p="123,456,789,159,357,147,258,369",r="?";int i=0;while(i<s.Length){p=p.Replace(s[i],i%2==0?'o':'x');++i;if(r=="?")if(p.Contains("xxx"))r="X";else if(p.Contains("ooo"))r="O";}Console.Write(r);}

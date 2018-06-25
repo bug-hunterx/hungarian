@@ -1,0 +1,7 @@
+
+CODEGOLF_METHOD_PLACEHOLDER
+
+local ARG0 = "EUIyouiepIEjhadSDJ(*Y9y9"
+
+f(ARG0);
+

@@ -1,0 +1,1 @@
+void f(std::string a,int n,int w){int l=a.length()/(n*w);if(a.length()%(n*w)!=0)++l;for(int k=1;k<=l;++k){for(int c=1;c<=n;++c){for(int ch=0;ch<w;++ch){int x=(l*w)*(c-1)+((k-1)*w)+ch;std::cout<<(x>=a.length()?' ':a.at(x));}if(c!=n)std::cout<<"|";}std::cout<<"\n";}}

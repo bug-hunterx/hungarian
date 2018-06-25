@@ -1,0 +1,1 @@
+static void f(std::string s,int c,int r){int q=s.length();int z=c*r;int t=q/z==1.0f*q/z?q/z:q/z+1;s=s+std::string(t*z-q,' ');std::string p = "";for(int j=0;j<t;j++)for(int i=0;i<c;i++)p+=s.substr((t*i+j)*r,r)+(i==c-1?"\n":"|");std::cout << p;}

@@ -1,0 +1,1 @@
+function f($s,$n,$w){$o=$n*$w;while(($r=strlen($s))%($o))$s.=" ";$a=array_chunk(str_split($s),$w);$r/=$o;for($i=0;$i<$r;++$i){for($j=0;$j<$n;++$j){echo implode("",$a[$i+$j*$r]).(($j<$n-1)?'|':'');}echo "\n";}}

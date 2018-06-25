@@ -1,0 +1,1 @@
+static void f(String p,int n,int w){int l=p.length();int r=(int)Math.ceil(l/(n*w*1.0));for(int i=0;i<r*n*w-l;i++)p+=" ";String[]c=new String[n];for(int i=0;i<n;i++){c[i]=p.substring(0,r*w);p=p.substring(r*w);}for(int j=0;j<r;j++){for(int i=0;i<n;i++){if(i>0)p('|');String o=c[i];p(o.substring(0,w));c[i]=o.substring(w);}p('\n');}}static void p(Object o){System.out.print(o);}

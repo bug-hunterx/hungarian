@@ -1,0 +1,11 @@
+01|mn|IJ
+23|op|KL
+45|qr|MN
+67|st|OP
+89|uv|QR
+ab|wx|ST
+cd|yz|UV
+ef|AB|WX
+gh|CD|YZ
+ij|EF|  
+kl|GH|  

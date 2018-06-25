@@ -1,0 +1,1 @@
+sub f {use POSIX;$c=$cost;if($c<2000){$p=u($c,100)}elsif($c<5000){$p=u($c,500)}else{$p=r(int($c*1.1))}$t=$p-$c;if($t==0||$t>1500){$j="PAID BY CARD"}elsif($t%100!=0){$j="KEEP THE CHANGE YOU FILTY ANIMAL"}else{$j="HERE IS $p"}print("$j\n");sub u{int(ceil($_[0]/$_[1]))*$_[1]}sub r{int(($_[0]+249)/500)*500}}

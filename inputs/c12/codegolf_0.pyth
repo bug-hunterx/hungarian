@@ -1,0 +1,24 @@
+#!/bin/bash
+
+read -d '' ARG <<"EOF"
+'>>>vvv>>
+>>>vvv>>
+>>>hvv>>
+>>>H>v^v
+W^>wWH^v
+^W><w>>v
+>><<H^<v
+<<<h^<<<'
+4
+4
+EOF
+
+
+read -d '' SCRIPT <<"EOF"
+CODEGOLF_METHOD_PLACEHOLDER
+
+EOF
+
+
+echo "$ARG" | python3 pyth.py -s -c "$SCRIPT"
+

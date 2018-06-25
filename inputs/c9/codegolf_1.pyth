@@ -1,0 +1,15 @@
+#!/bin/bash
+
+read -d '' ARG <<"EOF"
+'10 40 koopa goomba 20 30 piranha piranha'
+EOF
+
+
+read -d '' SCRIPT <<"EOF"
+CODEGOLF_METHOD_PLACEHOLDER
+
+EOF
+
+
+echo "$ARG" | python3 pyth.py -s -c "$SCRIPT"
+

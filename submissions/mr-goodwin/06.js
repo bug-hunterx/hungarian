@@ -1,0 +1,1 @@
+function f(o){var e=0;if(2e3>o){var l=o%100;e=l?100-l:0}else if(5e3>o){var l=o%500;e=l?500-l:0}else{e=Math.trunc(.1*o);var l=(o+e)%500;e=250>l?e-l:e+(500-l)}0===e||e>1500?console.log("PAID BY CARD"):e%100>0?console.log("KEEP THE CHANGE YOU FILTY ANIMAL"):console.log("HERE IS "+(o+e))}

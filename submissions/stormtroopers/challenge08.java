@@ -1,0 +1,1 @@
+static void f(String i, int n, int w){int l=i.length(),a=n*w,b=l/a+(l%a==0?0:1),r,c,x=0;while(x++<a*b-l)i+=" ";for(r=0;r<b;r++){for(c=0;c<n;c++){x=c*b+r;System.out.print((c==0?(r==0?"":"\n"):"|")+i.substring(x*w,(x+1)*w));}}}

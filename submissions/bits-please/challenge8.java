@@ -1,0 +1,1 @@
+static void f(String s,int n, int w){int p=0;int r=0;while (p>s.length()*-1||p>w*-1)p=-n*w*++r;String[] a=String.format("%"+p+"s", s).split("(?<=\\G.{"+w+"})");s="";for(int j=0;j<r;j++){for(int i=0;i<a.length;i++)if(i%r==j)s+=a[i]+"|";s=s.substring(0, s.length()-1);s+="\n";}System.out.print(s.substring(0, s.length()-1));}

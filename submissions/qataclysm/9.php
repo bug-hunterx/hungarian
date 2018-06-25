@@ -1,0 +1,1 @@
+function f($s){$a=split(" ",$s);$l=3;$s=0;$i=0;$c=0;foreach($a as $v){if(is_numeric($v)){$c+=$v;$l+=(int)($c/100);$c=$c%100;}else{switch($v){case'goomba':case'piranha':case'koopa':if($i>0)break;$s?$s=0:$l--;if($l<1)echo'GAME OVER';break;case'Bowser':case'Princess':echo'WIN';case'Mushroom':$s=1;break;case'1Up':$l++;break;case'Star':$i=3;break;default:$i++;}}$i--;}echo'???';}

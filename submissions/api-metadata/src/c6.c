@@ -1,0 +1,1 @@
+void f(int i){int t;if(i<2000) t=(int)(((i+99)/100)*100-i);else {if(i>=5000){t=(int)((int)(((i*1.1)+250)/500)*500-i);}else {t=(int)(((i+499)/500)*500-i);}}if(t==0||t>1500)printf("PAID BY CARD");else if (t!=t/100*100)printf("KEEP THE CHANGE YOU FILTY ANIMAL");else printf("HERE IS %d",(t+i));}

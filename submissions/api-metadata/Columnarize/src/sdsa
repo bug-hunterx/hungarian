@@ -1,0 +1,69 @@
+The task*​
+
+```f(input: string)```
+
+Print the characters to `STDOUT` that do not belong. (I.e. characters with the least frequency of a given keyboard row.)
+
+They should be keyboard-ordered (and not input-ordered). Characters created without pressing the SHIFT (asdf etc) should come before SHIFT-ed characters (PI*&" etc.). Each character should be printed once only.
+
+
+​*Rules*​
+
+Our eight-handed friend has set his keyboard to [International English](http://www.starr.net/is/type/intlchart.html) and uses Windows >8<.
+Input will not have white-space, or any characters that cannot with or without pressing SHIFT. (E.e. no international accented chars.)
+
+If there is a tie between two keyboard rows:
+
+:one: print the one with the least amount of unique characters
+:two: print the topmost row
+
+1. `FJAFJKLDSKF7JKFDJ` => `7`
+2. `ASDFDSASDFDSAzxcPOIUY` => `zxc`
+> Chars with least frequency of a given row
+3. `qwERfgHJ123456789` => `qwER`
+> Topmost row wins; note the ordering
+4. `FGhjKL:"';lkqwerzxcc` => `zxc`
+> Least amount of unique chars; `zxc` vs. `qwer`
+5. `ASDFASDFqwer432!` => `234!`
+6. `EUIyouiepIEjhadSDJ(*Y9y9` => `9*(`
+7. `1233AERSdfqw` => `123`
+8. `ASDF11!*&+1` => `ASDF`
+9. `}*3%&2098@$2k234#@$M` => `}`
+10. `wqfdSREA3321` => `123`
+11. `:X:D:):DDDDDDDxDDDD:(;);];]` => `]`
+
+
+#0: PHP Notice:  FJAFJKLDSKF7JKFDJ in /codegolf/codegolf_0.php on line 10
+
+#10: PHP Notice:  EUIyouiepIEjhadSDJ(*Y9y9 in /codegolf/codegolf_10.php on line 10
+
+#11: PHP Notice:  lkjrhsDdftkjhrksRjd in /codegolf/codegolf_11.php on line 10
+
+#12: PHP Notice:  Undefined variable: M in /codegolf/codegolf_12.php on line 3
+PHP Notice:  }*3%&2098@$2k234#@ in /codegolf/codegolf_12.php on line 10
+
+#13: PHP Notice:  ASD!@#Vcx in /codegolf/codegolf_13.php on line 10
+
+#14: PHP Notice:  ASdf1233qwER in /codegolf/codegolf_14.php on line 10
+
+#15: PHP Notice:  wqfdSREA3321 in /codegolf/codegolf_15.php on line 10
+
+#16: PHP Notice:  :x:D:):DDDDDDDxDDDD:(;);];] in /codegolf/codegolf_16.php on line 10
+
+#1: PHP Notice:  ASDFDSASDFDSAzxcPOIUY in /codegolf/codegolf_1.php on line 10
+
+#2: PHP Notice:  qwERfgHJ123456789 in /codegolf/codegolf_2.php on line 10
+
+#3: PHP Notice:  FGhjKL:"\';lkqwerzxcc in /codegolf/codegolf_3.php on line 10
+
+#4: PHP Notice:  ASDFASDFqwer432! in /codegolf/codegolf_4.php on line 10
+
+#5: PHP Notice:  12334TWQTSDFDSXVVBBX in /codegolf/codegolf_5.php on line 10
+
+#6: PHP Notice:  1233AERSdfqw in /codegolf/codegolf_6.php on line 10
+
+#7: PHP Notice:  ASDF11111 in /codegolf/codegolf_7.php on line 10
+
+#8: PHP Notice:  ZXCVBNMMNBVCZQQwerASdf in /codegolf/codegolf_8.php on line 10
+
+#9: PHP Notice:  akjfKJFAlkjaf;A:JAF:"AjsdlkvxCBN,>M in /codegolf/codegolf_9.php on line 10

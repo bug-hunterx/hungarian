@@ -1,0 +1,8 @@
+
+CODEGOLF_METHOD_PLACEHOLDER
+
+local ARG0 = "1:3\n1:5|1:2\n1:3|1:1\n1:2|1:0\n1:1"
+local ARG1 = 2
+
+f(ARG0, ARG1);
+

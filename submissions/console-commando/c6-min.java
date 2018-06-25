@@ -1,0 +1,1 @@
+static void f(int c){String m;int r=c;if(r<2000)while(r%100>0)r++;else if(r<5000)while(r%500>0)r++;else r=Math.round((int)((float)c*1.1f)/500f)*500;c=r-c;if(c<1||c>1500)m="PAID BY CARD";else if(c%100>0)m="KEEP THE CHANGE YOU FILTY ANIMAL";else m="HERE IS "+r;System.out.println(m);}

@@ -1,0 +1,1 @@
+static void f(int c) {int r;if(c<2000)r=((c+99)/100)*100;else if (c < 5000) r = ((c+499)/500)*500;else{int tp = ((int)(c*1.1));if (tp%500<250) r=tp-(tp%500);else r=((tp+499)/500)*500;}if (r-c==0 || r-c>1500) System.out.print("PAID BY CARD");else if ((r-c)%100 != 0) System.out.print("KEEP THE CHANGE YOU FILTY ANIMAL");else System.out.print("HERE IS "+r);}

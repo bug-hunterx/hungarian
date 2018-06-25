@@ -1,0 +1,1 @@
+static void f(String d){d.chars().mapToObj(i->(char)i).collect(Collectors.groupingBy(t->t,Collectors.counting())).entrySet().stream().sorted(Map.Entry.comparingByKey()).sorted(Map.Entry.comparingByValue()).forEach(x->{for(int z=0;z<x.getValue();z++)System.out.print(x.getKey());});}

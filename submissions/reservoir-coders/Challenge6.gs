@@ -1,0 +1,1 @@
+...2000<{(100/)100*}{.5000<{(500/)500*}{.10/+251- 500/)500*}if}if\-..0=\1500>or{;;"PAID BY CARD"}{..100/100*={+"HERE IS "\+}{;;"KEEP THE CHANGE YOU FILTY ANIMAL"}if}if

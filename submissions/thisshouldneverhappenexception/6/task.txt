@@ -1,0 +1,21 @@
+Challenge #6 Home alone
+You are home, alone, so you order a pizza.You will pay for it. (With money.)​The task​
+
+f(cost: int)
+
+Given the cost of the pizza, calculate the tip and give the money to the delivery guy.Depending on the amount you say (i.e. print to STDOUT)::one: if the tip equals 0 or more than 1500 Ft, say I PAID BY CARD KTHXBAI
+:two: if you could not possibly pay him just the tip without small coins (<100 Ft), say KEEP THE CHANGE YOU FILTHY ANIMAL
+:three: otherwise be a nice guy and say HERE IS amount where amount is the money you pay​Rules​Here is how you calculate the tip::one: If the pizza cost less than 2000 Ft, you round up to the nearest hundred.
+:two: When cost less than 5000 Ft, you round up to the nearest five hundred.
+:three: Otherwise you add 10%, then round to the nearest five hundred or thousand.
+5100 -> 5650 -> 5500, but 6138 -> 6751 -> 7000
+When adding the 10%, you truncate the decimal, instead of rounding it.
+6138 *1.1 = 6751 and not 6751.8 or 6752
+​Example Test-Cases​
+Note: you submission will be tested using a lot more inputs
+1. 100 => PAID BY CARD
+2. 15000 => HERE IS 16500
+3. 1199 => KEEP THE CHANGE YOU FILTY ANIMAL
+4. 6185 => HERE IS 7000
+7. 13217 => KEEP THE CHANGE YOU FILTY ANIMAL
+8. 11089 => KEEP THE CHANGE YOU FILTY ANIMAL

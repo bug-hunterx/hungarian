@@ -1,0 +1,1 @@
+function f(s){var f=[2,3,5,7,11,13,17,19,23],w=[30,1001,7429,238,627,1495,506,935],n=1,m=1;for(var i=0;i<s.length;i++){if(i%2==0){m*=f[s[i]-1];for(var p=0;p<w.length;p++){if(m%w[p]==0){console.log("O");return;}}}else{n*=f[s[i]-1];for(var p=0;p<w.length;p++){if(n%w[p]==0){console.log("X");return;}}}}console.log("?");}

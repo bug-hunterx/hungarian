@@ -1,0 +1,1 @@
+static void f(int c){int s=(c<2000)?g(c,100):(c<5000)?g(c,500):Math.round((int)(c*1.1)/500f)*500;int t=s-c;System.out.print((t==0||t>1500)?"PAID BY CARD":(t%100!=0)?"KEEP THE CHANGE YOU FILTY ANIMAL":"HERE IS "+s);}static int g(int c,int r){return c%r==0?c:(c+r)/r*r;}

@@ -1,0 +1,1 @@
+static void f(int i){float c=i;double t;int f=500,h=100;if(c<2000)t=Math.ceil(c/h)*h;else if(c<5000)t=Math.ceil(c/f)*f;else t=Math.round(c*1.1f/f)*f;double p=t-c;if(p==0||p>3*f)System.out.println("PAID BY CARD");else if(p%h!=0)System.out.println("KEEP THE CHANGE YOU FILTY ANIMAL");else System.out.println("HERE IS "+(int)t);}

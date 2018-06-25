@@ -1,0 +1,2 @@
+function f(n){m=n.length;a=[];for(i=0;i<m;i++)a.push(n.charCodeAt(i));a=a.sort(function(x,y){return(c(a,x)-c(a,y))-(x-y)/256});s="";for(i=0;i<m;i++)s+=String.fromCharCode(a[i]);console.log(s)}
+function c(n,m){r=0;for(i=0;i<n.length;i++)if(n[i]==m)r++;return r}

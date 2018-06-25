@@ -1,0 +1,4 @@
+e="call"
+b="something"
+a=("" "If there's $b strange" "I here it likes the girls" "Ghostbusters" "You better $e" "Unless you just want some more" "I ain't afraid of no ghost" "Who can you $e" "If you're all alone" "And $e" "Who ya gonna $e" "Yeah yeah yeah yeah" "When it comes through your door" "If you've had a dose of a" "Freaky ghost baby" "Lemme tell ya $b" "Who you gonna $e" "Running through your head" "Sleeping in your bed" "Louder" "In you neighborhood" "Don't get caught alone no no" "And it don't look good" "Pick up the phone" "An invisible man" "If you're seeing things" "Who can ya $e" "Bustin' makes me feel good" "I can't hear you" "If there's $b weird" "I think you better $e")
+for i in {3,1,20,16,3,29,22,16,3,0,6,6,0,25,17,7,3,24,18,16,3,0,6,6,0,16,3,8,23,9,3,0,6,2,6,11,0,10,3,0,13,14,4,3,0,15,27,0,6,6,0,21,0,3,0,12,5,30,3,0,10,3,0,10,3,0,30,3,0,10,3,0,28,10,3,0,19,3,0,10,3,0,26,3,0,10,3};do echo ${a[$i]};done

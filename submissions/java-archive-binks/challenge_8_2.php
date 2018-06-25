@@ -1,0 +1,1 @@
+function f($s,$n,$w) {$rs=intval((strlen($s)-1)/($n*$w))+1;$i=0;while($i<($w+1)*$n*$rs){if($i%($w+1)==$w){echo(intval(($i+1)/($w+1))%$n==0?"\n":"|");}else{$p=intval($i%($w+1));$c=intval(($i/($w+1))%$n);$r=intval($i/(($w+1)*$n));$j=$c*$w*$rs+$w*$r+$p;echo(($j<strlen($s))?$s[$j]:" ");}$i++;}}

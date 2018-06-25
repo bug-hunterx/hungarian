@@ -1,0 +1,1 @@
+static void f(String s){char[]r=new char[127];char z=48;for(char c:s.toCharArray())r[c]=++r[c];List<String>l=new ArrayList();for(char i=0;i<127;i++)if(r[i]>0)l.add(""+(char)(r[i]+z)+i);l.sort(null);l.forEach(c->{for(int i=0;i<c.charAt(0)-z;i++)System.out.append((c.charAt(1)));});}

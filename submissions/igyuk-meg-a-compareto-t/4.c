@@ -1,0 +1,1 @@
+int w[]={73,146,292,7,56,448,273,84};f(char*c){int x[2]={0},i,k=0;for(;*c;c++){x[k]|=1<<(*c-'1');for(i=0;i<8;i++){if((w[i]&x[k])==w[i]){printf("%c\n", k?'X':'O');return;}};k=!k;}printf("?\n");}

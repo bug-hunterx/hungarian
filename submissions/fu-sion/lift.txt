@@ -1,0 +1,254 @@
+#1
+
+4:2|1:5|2:0
+1:1|2:0
+2:0
+1:0
+1:5|3:6|1:0
+1:1|1:3|2:5, 11
+
+Step in 5 people at ground floor
+
+
+Lift stopped at 1 floor
+        Step out 1 people
+        Step in 4 people
+        There are 8 people in the lift at floor 1
+
+Lift stopped at 3 floor
+        Step out 1 people
+        Step in 0 people
+        There are 7 people in the lift at floor 3
+
+Lift stopped at 5 floor
+        Step out 3 people
+        Step in 0 people
+        There are 4 people in the lift at floor 5
+
+Lift stopped at 6 floor
+        Step out 3 people
+        Step in 7 people
+        There are 8 people in the lift at floor 6
+
+Lift stopped at 5 floor
+        Step out 1 people
+        Step in 3 people
+        There are 10 people in the lift at floor 5
+
+Lift stopped at 2 floor
+        Step out 4 people
+        Step in 1 people
+        There are 7 people in the lift at floor 2
+
+Lift stopped at 1 floor
+        Step out 1 people
+        Step in 1 people
+        There are 7 people in the lift at floor 1
+
+Lift stopped at 0 floor
+        Step out 6 people
+        Step in 0 people
+        There are 1 people in the lift at floor 0
+lonely after 8 stops at 0 floor
+
+#2
+
+1:0|1:1
+3:2|5:0
+1:1|2:2, 6
+
+Step in 4 people at ground floor
+
+
+Lift stopped at 1 floor
+        Step out 1 people
+        Step in 3 people
+        There are 6 people in the lift at floor 1
+
+Lift stopped at 2 floor
+        Step out 5 people
+        Step in 2 people
+        There are 3 people in the lift at floor 2
+
+Lift stopped at 1 floor
+        Step out 1 people
+        Step in 5 people
+        There are 7 people in the lift at floor 1
+polite after 3 stops at 1 floor
+
+#3
+
+2:1|3:2
+1:0|1:1
+3:2|5:0
+1:1|2:2, 10
+
+Step in 4 people at ground floor
+
+
+Lift stopped at 1 floor
+        Step out 1 people
+        Step in 3 people
+        There are 6 people in the lift at floor 1
+
+Lift stopped at 2 floor
+        Step out 5 people
+        Step in 2 people
+        There are 3 people in the lift at floor 2
+
+Lift stopped at 1 floor
+        Step out 1 people
+        Step in 5 people
+        There are 7 people in the lift at floor 1
+
+Lift stopped at 0 floor
+        Step out 6 people
+        Step in 0 people
+        There are 1 people in the lift at floor 0
+lonely after 4 stops at 0 floor
+
+#4
+
+2:2|1:5
+3:8|1:0
+4:2|1:5|2:0
+1:1|2:0|4:2
+2:0|2:7
+1:0|1:8
+1:5|3:6|1:0
+1:1|1:3|2:5, 9
+
+Step in 5 people at ground floor
+
+
+Lift stopped at 1 floor
+        Step out 1 people
+        Step in 4 people
+        There are 8 people in the lift at floor 1
+
+Lift stopped at 3 floor
+        Step out 1 people
+        Step in 2 people
+        There are 9 people in the lift at floor 3
+
+Lift stopped at 5 floor
+        Step out 3 people
+        Step in 0 people
+        There are 6 people in the lift at floor 5
+
+Lift stopped at 6 floor
+        Step out 3 people
+        Step in 0 people
+        There are 3 people in the lift at floor 6
+
+Lift stopped at 7 floor
+        Step out 2 people
+        Step in 3 people
+        There are 4 people in the lift at floor 7
+
+Lift stopped at 8 floor
+        Step out 3 people
+        Step in 3 people
+        There are 4 people in the lift at floor 8
+
+Lift stopped at 5 floor
+        Step out 1 people
+        Step in 7 people
+        There are 10 people in the lift at floor 5
+polite after 7 stops at 5 floor
+
+#5
+
+2:2|1:5
+3:8|1:0
+4:2|1:5|2:0
+1:1|2:0|4:2
+2:0|2:7
+1:0|1:8
+1:5|3:6|1:0
+1:1|1:3|2:5, 2
+
+Step in 5 people at ground floor
+
+polite after 0 stops at 0 floor
+
+#6
+2:0
+
+
+
+1:5, 2
+
+Step in 2 people at ground floor
+
+
+Lift stopped at 5 floor
+        Step out 1 people
+        Step in 2 people
+        There are 3 people in the lift at floor 5
+polite after 1 stops at 5 floor
+
+#7
+
+1:3
+1:5|1:2
+1:3|1:1
+1:2|1:0
+1:1, 2
+
+Step in 2 people at ground floor
+
+
+Lift stopped at 1 floor
+        Step out 1 people
+        Step in 1 people
+        There are 2 people in the lift at floor 1
+
+Lift stopped at 2 floor
+        Step out 1 people
+        Step in 1 people
+        There are 2 people in the lift at floor 2
+
+Lift stopped at 3 floor
+        Step out 1 people
+        Step in 1 people
+        There are 2 people in the lift at floor 3
+
+Lift stopped at 5 floor
+        Step out 1 people
+        Step in 1 people
+        There are 2 people in the lift at floor 5
+
+Lift stopped at 3 floor
+        Step out 1 people
+        Step in 1 people
+        There are 2 people in the lift at floor 3
+
+Lift stopped at 2 floor
+        Step out 1 people
+        Step in 1 people
+        There are 2 people in the lift at floor 2
+
+Lift stopped at 1 floor
+        Step out 1 people
+        Step in 1 people
+        There are 2 people in the lift at floor 1
+
+Lift stopped at 0 floor
+        Step out 1 people
+        Step in 0 people
+        There are 1 people in the lift at floor 0
+lonely after 8 stops at 0 floor
+
+#8
+
+1:0|1:1
+1:3|5:5|2:0
+
+3:2|5:0
+1:1|2:2, 2
+
+Step in 4 people at ground floor
+
+polite after 0 stops at 0 floor
+

@@ -1,0 +1,1 @@
+function f($t,$c,$w){$r=max(ceil(strlen($t)/$c/$w),1);$s=$r*$c*$w;while(strlen($t)<$s){$t.=" ";}for($i=0;$i<$r;$i++){for($j=0;$j<$c;$j++){echo substr($t,$i*$w+$j*$r*$w,$w);if($j<$c-1)echo'|';}if($i<$r-1)echo"\n";}}

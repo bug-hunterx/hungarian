@@ -1,0 +1,41 @@
+@hackathonbot:  show challange 2
+See http://xkcd.com/1530/.
+
+
+​*The task*​
+
+```f(input: string)```
+
+Print the characters to `STDOUT` that do not belong. (I.e. characters with the least frequency of a given keyboard row.)
+
+They should be keyboard-ordered (and not input-ordered). Characters created without pressing the SHIFT (asdf etc) should come befoe SHIFTed characters (PI*&" etc.). Each character should be printed once only.
+
+
+​*Rules*​
+
+Our eight-handed friend has set his keyboard to [International English](http://www.starr.net/is/type/intlchart.html) and uses Windows >8<. Input will not have white-space, or any characters that cannot with or without pressing SHIFT. (E.e. no international accented chars.)
+
+If there is a tie between two keyboard rows:
+
+:one: print the one with the least amount of unique characters
+:two: print the topmost row
+
+
+​*Example Test-Cases*​
+
+1. `FJAFJKLDSKF7JKFDJ` => `7`
+2. `ASDFDSASDFDSAzxcPOIUY` => `zxc`
+> Chars with least frequency of a given row
+3. `qwERfgHJ123456789` => `qwER`
+> Topmost row wins; note the ordering
+4. `FGhjKL:"';lkqwerzxcc` => `zxc`
+> Least amount of unique chars; `zxc` vs. `qwer`
+5. `ASDFASDFqwer432!` => `234!`
+6. `EUIyouiepIEjhadSDJ(*Y9y9` => `9*(`
+7. `1233AERSdfqw` => `123`
+8. `ASDF11!*&+1` => `ASDF`
+9. `}*3%&2098@$2k234#@$M` => `}`
+10. `wqfdSREA3321` => `123`
+11. `:X:D:):DDDDDDDxDDDD:(;);];]` => `]`
+
+(spider pride! http://cwsargeras.blogspot.hu/2009/03/scourge-chat-log-1.html)

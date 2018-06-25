@@ -1,0 +1,8 @@
+
+CODEGOLF_METHOD_PLACEHOLDER
+
+local ARG0 = "1:0|1:1\n1:3|5:5|2:0\n\n3:2|5:0\n1:1|2:2"
+local ARG1 = 10
+
+f(ARG0, ARG1);
+

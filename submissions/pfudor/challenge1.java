@@ -1,0 +1,1 @@
+static void f(String a){int o[]=new int[128],m=0;for(char c:a.toCharArray()){o[c]++;if(m<o[c])m=o[c];}for(int n=1;n<=m;n++)for(int i=0;i<o.length;i++)if(o[i]==n)for(int j=0;j<o[i];j++)System.out.print((char)i);}

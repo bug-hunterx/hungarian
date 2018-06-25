@@ -1,0 +1,1 @@
+static void f(String s,int c,int x){int i,j,f,l=s.length(),d=l/x+(l%x>0?1:0),r=d/c+(d%c>0?1:0);for(i=0;i<d*x;i++)s+=" ";for(i=0;i<r;i++){for(j=0;j<c;j++){f=r*x*j+i*x;System.out.print(s.substring(f,f+x)+(j<c-1?"|":""));}System.out.println();}}

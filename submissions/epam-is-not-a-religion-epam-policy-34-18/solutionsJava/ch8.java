@@ -1,0 +1,1 @@
+public static void f(String t,int c,int w){int m=t.length()%w;if(m!=0){for(int i=0;i<w-m;i++){t+=" ";}}m=(t.length()/w)%c;if(m!=0){for(int i=0;i<w*(c-m);i++){t+=" ";}}int r=(t.length()/w)/c;for(int k=0;k<r;k++){for(int j=0;j<c;j++){for(int i=k*w;i<(k*w)+w;i++){System.out.print(t.charAt((j*r*w)+i));}System.out.print(j+1<c?"|":"");}System.out.print(k+1<r?"\n":"");}}

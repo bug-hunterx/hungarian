@@ -1,0 +1,80 @@
+f = (e) ->
+  keyboard = [
+    '`1234567890-=~!@#$%&*()_+'
+    'qwertyuiop[]\\QWERTYUIOP{}|'
+    'asdfghjkl;\'ASDFGHJKL:"'
+    'zxcvbnm,./ZXCVBNM<>?'
+  ]
+  c = charsNotInRow(e)
+  s = selectShortest(c)
+  o = sortToKeyboardOrder(s)
+  console.log(o)
+  return
+
+charsNotInRow = (e) ->
+  result = []
+  keyboardRowCheckedAgainst = 0
+  while keyboardRowCheckedAgainst < 4
+        remainingCharacters = removeCharacters(e, keyboard[keyboardRowCheckedAgainst])
+    actualRow = 0
+    while actualRow < 4
+      keyboardRowCheckedAgainst != actualRow and charsInThisRow = actualRow.toString()
+      remainingCharacters.split('').forEach((e) ->
+        keyboard[actualRow].indexOf(e) >= 0 and (charsInThisRow = charsInThisRow.concat(e))
+        return
+      )
+      charsInThisRow.length > 1 and result.push(charsInThisRow)
+      actualRow++
+    keyboardRowCheckedAgainst++
+  result
+
+removeCharacters = (e, r) ->
+  t = ''
+  e.split('').forEach((e) ->
+    r.indexOf(e) < 0 and (t = t.concat(e))
+    return
+  )
+  t
+
+selectShortest = (e) ->
+  filtered = getShortest(e)
+  filtered.length > 1 and (filtered = getShortest(removeDuplicateFromArray(filtered)))
+  filtered[0].substring(1)
+
+getShortest = (e) ->
+  minLength = getShortestLength(e)
+  e.filter((e) ->
+    e.length == minLength
+  ).sort()
+
+removeDuplicateFromArray = (e) ->
+  result = []
+  e.forEach((e) ->
+    result.push removeDuplicatedChars(e)
+    return
+  )
+  result
+
+removeDuplicatedChars = (e) ->
+  replaced = e.replace(/(.)(?=.*\1)/g, '')
+  replaced
+
+getShortestLength = (e) ->
+  minLength = 99
+  e.forEach((e) ->
+    size = e.length
+    minLength > size and 0 != size and (minLength = size)
+    return
+  )
+  minLength
+
+sortToKeyboardOrder = (e) ->
+  r = ''
+  row = 0
+  while row < 4
+    keyboard[row].split('').forEach (t) ->
+      index = e.indexOf(t)
+      index >= 0 and (r = r.concat(e[index]))
+      return
+    row++
+  r

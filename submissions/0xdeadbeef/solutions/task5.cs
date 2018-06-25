@@ -1,0 +1,1 @@
+static void f(string b){var q="/ \\$__\\#/||\\$//\\\\# \\$__#/ $__#/| $/__# |\\$__\\#/|/$///#\\|\\$\\\\\\#/||$//|#||\\$|\\\\#/|__$//__#__|\\$__\\\\";b=" "+b+" ";var l=b;while (1<2){foreach (var r in q.Split('#')){var w=r.Split('$');b=b.Replace(w[0],w[1]);}if(l==b)break;l=b;}Console.Write(b.Trim());}

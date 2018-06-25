@@ -1,0 +1,15 @@
+#!/bin/bash
+
+read -d '' ARG <<"EOF"
+'457281369'
+EOF
+
+
+read -d '' SCRIPT <<"EOF"
+CODEGOLF_METHOD_PLACEHOLDER
+
+EOF
+
+
+echo "$ARG" | python3 pyth.py -s -c "$SCRIPT"
+

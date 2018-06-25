@@ -1,0 +1,1 @@
+static void f(String i){List<String> c=Arrays.asList(i.split(""));c.stream().sorted((a,b)->{long x=c.stream().filter(s->s.equals(a)).count();long y=c.stream().filter(s->s.equals(b)).count();return x==y?a.compareTo(b):(int)(x-y);}).forEach(System.out::print);}

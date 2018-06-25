@@ -1,0 +1,6 @@
+
+
+"ASD!@#Vcx"
+
+CODEGOLF_METHOD_PLACEHOLDER
+

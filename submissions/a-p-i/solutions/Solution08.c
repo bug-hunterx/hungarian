@@ -1,0 +1,1 @@
+void f(char*t,int c,int w){int b=strlen(t),v=b/w+(b%w>0?1:0),a=v/c+(v%c>0?1:0),s=0,j=0,i;v+=c*a-v;for(i=0;i<v;i++){int g=s*w;if(g<b){printf("%-*.*s",w,w,t+g);}else{printf("% *c",w,' ');}s+=a;int h=s>=v;printf(h?"\n":"|");if(h)s=++j;}}

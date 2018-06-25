@@ -1,0 +1,1 @@
+void f(int p){int t,z;char r[99];t=p<5000?p<2000?((p+49)/100)*100:(p+499)/500*500:((p+(p/10)+249)/500)*500;z=t-p;sprintf(r,"HERE IS %d",t);printf("%s",(z==0|z>1500?"PAID BY CARD":z%100!=0?"KEEP THE CHANGE YOU FILTY ANIMAL":r));}

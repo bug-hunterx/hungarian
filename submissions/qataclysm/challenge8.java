@@ -1,0 +1,3 @@
+static void f(String q,int n,int w){String[] e=new String[i(q,w)];for(int i=0;i<e.length;i++){e[i]=q.substring(i*w,Math.min((i+1)*w,q.length()));}String r=t(n,w);int y=(e.length+n-1)/n;for(int i=0;i<y;i++){String[] u=new String[n];for(int j=0;j<n;j++){int i1=i+j*y;u[j]=e.length>i1?e[i1]:"";}System.out.println(String.format(r,u));}}
+static String t(int n,int width){StringBuilder q=new StringBuilder();for(int i=0;i<n;i++) {q.append("%-"+width+"."+width+"s|");}q.deleteCharAt(q.length()-1);return q.toString();}
+static int i(String a,int b) {return (int)Math.max(1,Math.ceil(1.0*a.length()/b));}

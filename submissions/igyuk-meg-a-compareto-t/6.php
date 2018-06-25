@@ -1,0 +1,1 @@
+function f($i){$t=($i>=5e3)?round(floor($i*1.1)/500)*500-$i:ceil($i/500)*500-$i;if($i<2e3)$t=ceil($i/100)*100-$i;echo (!$t||$t>1500)?"PAID BY CARD\n":(($t%100>0)?"KEEP THE CHANGE YOU FILTY ANIMAL\n":"HERE IS ".($i+$t)."\n");}

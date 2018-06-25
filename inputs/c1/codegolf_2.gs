@@ -1,0 +1,6 @@
+
+
+"Hello World!"
+
+CODEGOLF_METHOD_PLACEHOLDER
+

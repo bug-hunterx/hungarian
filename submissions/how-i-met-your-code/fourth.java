@@ -1,0 +1,1 @@
+static void f(String s){String p="123,456,789,159,357,147,258,369",r="?";int i=0;while(i<s.length()){p=p.replace(s.charAt(i),i%2==0?'o':'x');++i;if(r=="?")if(p.contains("xxx"))r="X";else if(p.contains("ooo"))r="O";}System.out.print(r);}

@@ -1,0 +1,1 @@
+static void f(String x){char a[]=new char[255],d=0,i,j,k;for(byte b:x.getBytes())if(++a[b]>d)d=a[b];String r="";for(i=1;i<=d;++i)for(j=0;j<255;++j)if(a[j]==i)for(k=0;k<i;++k)r=r.concat(String.valueOf(j));System.out.print(r);}

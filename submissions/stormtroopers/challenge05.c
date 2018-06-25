@@ -1,0 +1,3 @@
+#include <ctype.h>
+#define q strlen
+char* c(char* s,int x,int o){char* r=(char*)malloc((q(s)+1+x)*sizeof(char));*(r+q(s)+x)=0;strcpy(o?r+x:r,s);return r;}void f(char *d){char *u,*p;int m,l=0,t;u=c(d,0,0);while(1){if(l%2==0){m = 0;p = u;while(*p!=0){if(*p==47){if(*(p+1)==32){*p =*(p+1)=95;m=1;}else if(*(p+1)=='|'){if(*(p+2)=='|'&&*(p+3)==92){*(p+1)=47;*(p+2)=92;m=1;}else if(*(p+2)==0||*(p+2) != 92){*(p+1)=47;p++;m=1;}}}p++;}}else{p=u+q(u)-1;while(p>u){if(*p==92){if(*(p-1)==32){*p=*(p-1)=95;m=1;}else if(*(p-1)=='|'){if(p-1==u||*(p-2)!= 47){*(p-1)=92;p--;m=1;}}}p--;}if(m==0)break;}l++;}if(u[0]==92){u = c(u, 1, 1);u[0]=u[1]=95;}t = q(u)-1;if (u[t]==47){u = c(u, 1, 0);u[t]=u[t+1]=95;}printf(u);}

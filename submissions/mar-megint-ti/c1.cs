@@ -1,0 +1,1 @@
+static void f(string s){int[]f=new int[256];for (int p=s.Length-1;p>=0;--p){char c=s[p];++f[c];}for(int i=1;i<=s.Length;i++){for (int j=0;j<256;j++){if (f[j] == i){for(int k=0; k<f[j];k++)Console.Write((char)j);}}}}

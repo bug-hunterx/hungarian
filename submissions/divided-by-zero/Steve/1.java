@@ -1,0 +1,1 @@
+static void f(String s){s.chars().boxed().collect(Collectors.groupingBy(k->k,Collectors.mapping(i->(char)i.intValue(),Collectors.toList()))).entrySet().stream().sorted((a,b)->{int d=a.getValue().size()-b.getValue().size();return d==0?a.getKey()-b.getKey():d;}).forEach(o->o.getValue().forEach(System.out::print));System.out.print('\n');}

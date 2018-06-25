@@ -1,0 +1,1 @@
+int v(const void *a,const void *b){if(*(char*)a!=*(char*)b)return*(char*)a-*(char*)b;return 0;}void f(char*a){char sorted[10000]={0};strncpy(sorted,a,sizeof &a);qsort(sorted,strlen(a),sizeof *a,v);printf("%s",sorted);}

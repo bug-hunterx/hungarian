@@ -1,0 +1,1 @@
+function f($c){$t=($c<2e3?ceil($c/100)*100:($c<5e3?ceil($c/500)*500:round(($c*1.1|0)/500)*500))-$c;echo($t<1||1500<$t)?'PAID BY CARD':($t%100<>0?'KEEP THE CHANGE YOU FILTY ANIMAL':'HERE IS '.($c+$t));}

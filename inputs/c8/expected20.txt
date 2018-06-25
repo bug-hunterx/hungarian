@@ -1,0 +1,9 @@
+0|9|i|r|A|J|S
+1|a|j|s|B|K|T
+2|b|k|t|C|L|U
+3|c|l|u|D|M|V
+4|d|m|v|E|N|W
+5|e|n|w|F|O|X
+6|f|o|x|G|P|Y
+7|g|p|y|H|Q|Z
+8|h|q|z|I|R| 

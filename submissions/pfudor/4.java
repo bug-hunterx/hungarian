@@ -1,0 +1,1 @@
+static void f(String arg){int arry[][]=new int[][]{{1,2,3},{4,5,6},{7,8,9},{1,4,7},{2,5,8},{3,6,9},{1,5,9},{3,5,7}};for(int i=0;i<arg.length();i++){String res="";for(int k=i;k>=0;k-=2)res+=arg.charAt(k);for(int j=0;j<8;j++)if(res.contains(""+arry[j][0])&&res.contains(""+arry[j][1])&&res.contains(""+arry[j][2])){System.out.print(i%2==0?"O":"X");return;}}System.out.print("?");}

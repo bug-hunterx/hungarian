@@ -1,0 +1,13 @@
+C   Status      Lang    Owner
+    1   done        c++     Adam
+    2   done        js      Kami
+    3   done        bash    Zoli
+    4   done        c       Adam
+    5   done        c       Adam
+    6   done        c       Adam
+    7   pending     go      Adam
+    8   done        js      Kami
+    9   done        php     Adam
+    10  pending     java    Zoli
+    11  done        ruby    Kami
+    12  pending     -       -

@@ -1,0 +1,1 @@
+function f($s){$s=trim(str_replace("  "," ",$s))." x";$z=$c=0;$l=3;$r=-1;foreach(explode(" ",$s)as$p){$r--;if($c>=100){$l++;$c-=100;};if(!$l){echo"GAME OVER";return;}elseif($p[0]=="P"|$p[0]=="B"){echo"WIN";return;}elseif($p[0]=="S")$r=2;elseif(($p[0]=="p"|$p[0]=="k"|$p[0]=="g")&&$r<0)$z?$z=0:$l--;elseif(@$p[1]=="U")$l++;elseif($p[0]=="M")$z=1;else$c+=$p;}echo"???";}

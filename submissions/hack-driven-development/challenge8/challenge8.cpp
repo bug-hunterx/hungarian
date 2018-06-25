@@ -1,0 +1,1 @@
+void f(std::string s,int c,int x){int i=0,j,f,l=s.length(),d=l/x+(l%x>0?1:0),r=d/c+(d%c>0?1:0);for(;i<d*x;i++)s+=" ";for(i=0;i<r;i++){for(j=0;j<c;j++){f=r*x*j+i*x;std::cout<<s.substr(f,x)+(j<c-1?"|":"");}std::cout<<"\n";}}

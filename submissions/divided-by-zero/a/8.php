@@ -1,0 +1,1 @@
+function f($i,$n,$w){$c=$n*$w;while(strlen($i)>$c)$c+=($n*$w);if($c>strlen($i)){$i=str_pad($i,$c);}$o=str_split($i,$w);$s=strlen($i)/($w*$n);for($k=0;$k<$s;$k++){for($v=$k;$v<count($o);$v+=$s){echo$v!=$k?"|":"";echo$o[$v];}echo$k+1==$s?"":"\n";}}

@@ -1,0 +1,1 @@
+sub f{@m=split//,$game;@R=("123","456","789","147","258","369","159","357"),$W='?';while($i=shift(@m)){($#O<=$#X)?push@O,$i:push@X,$i;}$O=join('',@O),$X=join('',@X);foreach(@R){@a=$O=~/[$_]/g;$c=@a;@b=$X=~/[$_]/g;$d=@b;if($c==3){$W='O';}elsif($d==3){$W='X';}}print$W;}

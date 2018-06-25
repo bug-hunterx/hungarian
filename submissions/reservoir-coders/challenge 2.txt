@@ -1,0 +1,67 @@
+
+using System;
+using System.Linq;
+using System.Collections.Generic;
+using System.Text;
+using System.Text.RegularExpressions;
+using System.IO;
+
+namespace Codegolf
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {            
+			Console.Write("1. Expected: 7\n   Actual:   ");
+            f("FJAFJKLDSKF7JKFDJ");
+			Console.WriteLine();
+            Console.Write("2. Expected: zxc\n   Actual:   ");
+            f("ASDFDSASDFDSAzxcPOIUY");
+			Console.WriteLine();
+            Console.Write("2. Expected: qwER\n   Actual:   ");
+            f("qwERfgHJ123456789");
+			Console.WriteLine();
+            Console.Write("2. Expected: zxc\n   Actual:   ");
+            f("FGhjKL:\"';lkqwerzxcc\"");
+			Console.WriteLine();
+		}
+
+        static void f(string i)
+		{
+			Console.Write(i);
+		}
+    }
+}
+==========================================================================================
+----------------
+See http://xkcd.com/1530/.
+
+
+?*The task*?
+
+```f(input: string)```
+
+Print the characters to `STDOUT` that do not belong. (I.e. characters with the least frequency of a given keyboard row.)
+
+They should be keyboard-ordered (and not input-ordered). Unshifted characters come first. Each character should be printed once only.
+
+
+?*Rules*?
+
+Our eight-handed friend has set his keyboard to International English and uses Windows >8<. Input will not have white-space, special characters, control keys, accented characters, etc.
+
+If there is a tie between two keyboard rows:
+
+:one: print the one with the least amount of unique characters
+:two: print the topmost row
+
+
+?*Example Test-Cases*?
+
+1. `FJAFJKLDSKF7JKFDJ` => `7`
+2. `ASDFDSASDFDSAzxcPOIUY` => `zxc`
+> Chars with least frequency of a given row
+3. `qwERfgHJ123456789` => `qwER`
+> Topmost row wins; note the ordering
+4. `FGhjKL:"';lkqwerzxcc` => `zxc`
+> Least amount of unique chars; `zxc` vs. `qwer`

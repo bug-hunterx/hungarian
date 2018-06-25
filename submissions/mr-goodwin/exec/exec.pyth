@@ -1,0 +1,20 @@
+#!/bin/bash
+
+read -d '' ARG <<"EOF"
+12
+'apple'
+3.14
+'/challenge_input/c0/input1.txt'
+'a'
+3
+EOF
+
+
+read -d '' SCRIPT <<"EOF"
+CODEGOLF_METHOD_PLACEHOLDER
+
+EOF
+
+
+echo "$ARG" | python3 pyth.py -s -c "$SCRIPT"
+

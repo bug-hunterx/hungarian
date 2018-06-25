@@ -1,0 +1,1 @@
+static void f(String s){for(var i=0;i<99;i++)s=(" "+s+" ").Replace("/ ", "__").Replace("/||","//|").Replace("/| ", "/__").Replace("/|_", "//_").Replace(" \\", "__").Replace("_|\\", "_\\\\").Replace(" |\\", " __\\").Replace("||\\","|\\\\").Trim();Console.Write(s);}

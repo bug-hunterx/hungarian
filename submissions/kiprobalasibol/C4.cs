@@ -1,0 +1,1 @@
+static void f(int n){var r=new uint[n];r[0]=0;r[1]=1;for(var i=2;i<n;i++){r[i]=r[i-1]+r[i-2];}Console.Write(string.Concat(r.Select(num =>num+",")).TrimEnd(new[] {','}));} 

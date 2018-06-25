@@ -1,0 +1,1 @@
+static void f(String s){String r=" "+s+" ";String c=r;do{c=r;r=r.replaceAll("/ ", "__");r=r.replaceAll(" \\\\", "__");r=r.replaceAll("/\\|\\|\\\\", "//\\\\\\\\");r=r.replaceAll("(/\\|)([^\\\\])", "//$2");r=r.replaceAll("([^/])(\\|\\\\)", "$1\\\\\\\\");} while (!c.equals(r));System.out.println(r.trim());}

@@ -1,0 +1,1 @@
+def f(s):print("".join(a[1]for a in sorted((s.count(c),c)for c in s)))

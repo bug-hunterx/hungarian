@@ -1,0 +1,13 @@
+0|d|q|D|Q
+1|e|r|E|R
+2|f|s|F|S
+3|g|t|G|T
+4|h|u|H|U
+5|i|v|I|V
+6|j|w|J|W
+7|k|x|K|X
+8|l|y|L|Y
+9|m|z|M|Z
+a|n|A|N| 
+b|o|B|O| 
+c|p|C|P| 

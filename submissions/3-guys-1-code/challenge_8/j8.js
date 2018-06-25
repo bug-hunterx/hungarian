@@ -1,0 +1,1 @@
+function o(r,o){return Math.floor((r+o-1)/o)*o}function f(r,n,f){for(var t=r.length,a=n*f,e=o(t,a),h=Math.floor(e/a),l=new Array(e-t),s=l.length-1;s>=0;--s)l[s]=" ";r+=l.join("");for(var u=[],g=f;r;){if(r.length<g){u.push(r);break}u.push(r.substr(0,g)),r=r.substr(g)}for(var i=0;h>i;i++){for(var v="",b=0;n>b;b++)b!=n-1?v=v+u[b*h+i]+"|":v+=u[b*h+i];console.log(v)}}

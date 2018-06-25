@@ -1,0 +1,1 @@
+function f(s){for(i=0;i<9;++i)s=s.replace(/\/\|\|\\/g,"//\\\\").replace(/\/ /g,"__").replace(/\/$/g,"__").replace(/\/\|(?!\\)/g,"//").replace(/^\\/g,"__").replace(/ \\/g,"__").replace(/^\|\\/g,"\\\\").replace(/( |\\|__|\|)\|\\/g,"$1\\\\");console.log(s)}

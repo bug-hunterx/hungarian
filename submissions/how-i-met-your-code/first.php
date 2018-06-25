@@ -1,0 +1,1 @@
+function f($x){error_reporting(0);$a[]=array();$d=0;$i;$j;$k;foreach(unpack('C*', $x) as $b)if(++$a[$b]>$d)$d=$a[$b];$r="";for($i=1;$i<=$d;++$i)for($j=0;$j<255;++$j)if($a[$j]==$i)for($k=0;$k<$i;++$k)$r.=chr($j);echo($r);}

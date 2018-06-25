@@ -1,0 +1,3 @@
+0123|cdef|opqr|ABCD|MNOP|YZ  |    
+4567|ghij|stuv|EFGH|QRST|    |    
+89ab|klmn|wxyz|IJKL|UVWX|    |    

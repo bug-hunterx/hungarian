@@ -1,0 +1,1 @@
+function f($s){$r="???";$a=explode(" ",$s);$l=3;$c=$s=$i=0;foreach($a as$v){if($i>0)$i--;if($v=="goomba"||$v=="koopa"||$v=="piranha"){if($i<1)if($s>0)$s=0;else if(--$l<1){$r="GAME OVER";goto e;}}else if($v=="Mushroom")$s=1;else if($v=="Star")$i=3;else if($v=="1Up")$l++;else if($v=="Bowser"||$v=="Princess"){$r="WIN";goto e;}else{$c+=$v;while($c>=100){$l++;$c-=100;}}}e:echo$r;}

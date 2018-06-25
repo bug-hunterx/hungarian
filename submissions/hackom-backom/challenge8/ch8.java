@@ -1,0 +1,1 @@
+static void f(String I,int C,int W){int L=I.length();int N=C*W;int R=(L+N-1)/N;int P=N*R-L;String p=I+new String(new char[P]).replace('\0',' ');for(int r=0;r<R;r++){StringJoiner s=new StringJoiner("|");for(int c=0;c<C;c++){int i=c*R*W+r*W;s.add(p.substring(i,i+W));}System.out.println(s.toString());}}

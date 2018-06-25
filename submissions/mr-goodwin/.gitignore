@@ -1,0 +1,13 @@
+.idea/
+node_modules/
+jspm_packages/
+target/
+*.iml
+build.properties
+.classpath
+.project
+.settings/
+.vscode/
+jsconfig.json
+nb-configuration.xml
+npm-debug.log

@@ -1,0 +1,1 @@
+function f(t){q=0,c=console,m=Math,2e3>t?q=r(t,100):5e3>t?q=r(t,500):q=500*m.round(m.trunc(1.1*t)/500),k=q-t,k>1500||0==k?c.log("PAID BY CARD"):k%100<100&&k%100>0?c.log("KEEP THE CHANGE YOU FILTY ANIMAL"):c.log("HERE IS "+q)}function r(t,n){return m.ceil(t/n)*n}

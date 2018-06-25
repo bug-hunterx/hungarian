@@ -1,0 +1,14 @@
+| Challenge | Java | Python | CoffeScript | JavaScript | Perl | PHP |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1 | 259 | **94** | x | x | x | x |
+| 2 | **749** | x | x | x | x | x |
+| 3 | x | x | x | 1012 | x | **851** |
+| 4 | x | x | x | x | **268** | x |
+| 5 | x | x | x | x | x | x |
+| 6 | x | x | **277** | 342 | x | x |
+| 7 | x | x | x | x | x | x |
+| 8 | **301** | x | x | x | x | x |
+| 9 | x | x | x | x | x | x |
+| 10 | x | x | x | x | x | x |
+| 11 | x | x | x | x | x | x |
+| 12 | x | x | x | x | x | x |

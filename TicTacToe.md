@@ -1,0 +1,54 @@
+﻿
+A TicTacToe game can be represented as a string of numbers, where each number represents a position on the board:
+```
+ 1 | 2 | 3
+---+---+---
+ 4 | 5 | 6
+---+---+---
+ 7 | 8 | 9
+```
+
+The first move is always made by `O`.
+
+E.g. game `5237649` is:
+```
+   | X | O
+---+---+---
+ X | O | O
+---+---+---
+ X |   | O
+```
+
+*The task*
+
+```f(game: string)```
+
+Implement a function `f` that prints the winner of `game` to `STDOUT`.
+
+- Print `X` if X won the game
+- Print `O` if O won the game
+- Print `?` if the game was a draw
+
+
+*Rules*
+
+The numbers will always represent a valid game, but it's possible that it have additional moves, even though the game has already been won.
+
+E.g.
+```
+5237649
+52376498
+523764918
+```
+
+These all were won by `O` after the 7th step.
+
+
+*Example Test-Cases*
+
+> Note: you submission will be tested using a lot more inputs
+
+1. `352476` => `X`
+2. `4268379` => `O`
+3. `631854792` => `?`
+4. `523764918` => `O`

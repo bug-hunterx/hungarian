@@ -1,0 +1,38 @@
+	Number 1
+			treemap2.java						432
+			try1.py								260
+
+		Best
+			try1.py								296		
+			
+	Number 2
+			js1.js								1021
+		BEST
+			js1_min.js							543
+	Number 3
+	    challenge3.sh -> 1134
+
+	    BEST
+	        challenge3.sh -> 1134
+	Number 4
+		tictactoeAlgorithmMinified3.java		514
+		BEST
+			tictactoeAlgorithmMinified3.java	514
+	Number 5
+	    BEST
+	        lua -> 773
+	Number 6
+	Number 7
+		BEST
+			straight1_min.rb					729
+	Number 8
+		regexMinified2.coffee					309
+		Best
+			regexMinified2.coffee				309
+			
+	Number 9
+		/challenge9/mario3.go				
+		Best									543
+	Number 10
+	Number 11
+	Number 12

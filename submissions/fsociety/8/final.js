@@ -1,0 +1,1 @@
+function f(s,n,w){a=s.match(new RegExp('.{1,'+w+'}','g'));r=Math.ceil(a.length/n),t='';for(i=0;i<n*r;i++){a[i]=a[i]?a[i]:Array(w+1).join(' ');l=a[i].length;a[i]=l==w?a[i]:a[i]+Array(w-l+1).join(' ');}for(i=0;i<r;i++){for(j=0;j<n-1;j++)t+=a[j*r+i]+'|';t+=a[(n-1)*r+i]+'\n'}console.log(t)}

@@ -1,0 +1,1 @@
+static void f(String s,int c,int w) {int l=(int)Math.ceil((double)s.length()/(c*w));String t=String.format("%-"+l*c*w+"s",s);String[][] m=new String[l][c];for (int j=0;j<c;j++) {for (int i=0;i<l;i++){m[i][j]=t.substring(i*w+j*l*w,i*w+j*l*w+w);}}for(int i=0;i<l;i++){for(int j=0;j<c;j++){System.out.print(m[i][j]);System.out.print(j<c-1?"|":"\n");}}}

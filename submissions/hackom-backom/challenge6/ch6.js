@@ -1,0 +1,1 @@
+function r(c){var m=Math;if(c<2000){return(m.ceil(c/100))*100;}else if(c<5000){return 500*m.ceil(c/500);}else{return 500*m.round((m.trunc(c*1.1))/500);}}function f(c){var a,b,l;b=r(c);a=b-c;l=console.log;if(a==0||a>1500){return l('PAID BY CARD');}else if(a%100!=0){return l('KEEP THE CHANGE YOU FILTY ANIMAL');}else{return l('HERE IS '+b);}};

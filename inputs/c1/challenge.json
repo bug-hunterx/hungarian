@@ -1,0 +1,53 @@
+{
+  "id": 1,
+  "name": "Order by frequency",
+  "invalidChallengeRules": [
+    {
+      "mode": "Regex",
+      "rule": "\\b(trigger_error)\\b"
+    }
+  ],
+  "signature": [
+    "input:string"
+  ],
+  "argPacks": [
+    [
+      "Results, Relentlessly"
+    ],
+    [
+      "Excellence in Software Engineering"
+    ],
+    [
+      "Hello World!"
+    ],
+    [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+    ],
+    [
+      "We are a global team of strategists, designers, architects, and engineers. We collaborate with you to solve your biggest business challenges through the creative application of design thinking and technology solutions."
+    ],
+    [
+      "We imagine, design, engineer, and deliver software and customer experiences that change the world."
+    ]
+  ],
+  "desc": [
+    "",
+    "*The task*",
+    "",
+    "```f(input: string)```",
+    "",
+    "Print the input with its characters sorted by their frequency (ascending).",
+    "",
+    "*Rules*",
+    "",
+    "Input will only contain printable ASCII characters. Characters with the same frequency should be ordered by their ASCII values (ascending).",
+    "",
+    "",
+    "*Example Test-Cases*",
+    "",
+    "> Note: you submission will be tested using a lot more inputs",
+    "",
+    "1. `Hello World!` => ` !HWderoolll`",
+    "2. `Results, Relentlessly` => ` ,nuyRRtteeeellllssss`"
+  ]
+}

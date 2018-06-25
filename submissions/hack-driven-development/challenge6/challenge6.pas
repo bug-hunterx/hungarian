@@ -1,0 +1,1 @@
+procedure f(i:integer);var t:integer=0;begin if i<2000 then t:=Trunc((i+99)/100)*100 else if i<5000 then t:=Trunc((i+499)/500)*500 else t:=round(i*1.1/500.0)*500;t-=i; if (t=0)OR(t>1500) then write('PAID BY CARD') else if (t mod 100<>0) then write('KEEP THE CHANGE YOU FILTY ANIMAL') else write('HERE IS ',t+i);end;

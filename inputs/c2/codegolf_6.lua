@@ -1,0 +1,7 @@
+
+CODEGOLF_METHOD_PLACEHOLDER
+
+local ARG0 = "1233AERSdfqw"
+
+f(ARG0);
+

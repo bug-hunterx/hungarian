@@ -1,0 +1,1 @@
+function f(n){o=500;var r=c(n);r==n||r-n>3*o?console.log("PAID BY CARD"):(r-n)%100!=0?console.log("KEEP THE CHANGE YOU FILTY ANIMAL"):console.log("HERE IS "+r)}function c(n){return n<4*o?r(n,100):n<10*o?r(n,o):Math.round(parseInt(1.1*n)/o)*o}function r(o,n){return o%n!=0?parseInt(o/n+1)*n:o}

@@ -1,0 +1,1 @@
+static void f(int i){int t=0,x=0;if(i<2000){t=((i+99)/100)*100-i;}else{if(i>=5000){x=(int)(i*0.1);i=(int)Math.floor(i*1.1);t=Math.round((i+250)/500)*500-i+x;}else{t=(((i+499)/500)*500-i);}}if(t==0||t>1500)System.out.print("PAID BY CARD");else if(t%100>0&&t%100<100)System.out.print("KEEP THE CHANGE YOU FILTY ANIMAL");else System.out.print("HERE IS "+(i+t-x));}

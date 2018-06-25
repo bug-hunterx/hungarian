@@ -1,0 +1,1 @@
+static void f(String t){int[]l=new int[256];for(char c:t.toCharArray())l[c]++;String b="";int e=1;while(e<t.length()){for(int i=0;i<256;i++)if(l[i]==e){char[]a=new char[e];Arrays.fill(a,(char)i);b+=new String(a);}e++;}System.out.println(b.toString());}

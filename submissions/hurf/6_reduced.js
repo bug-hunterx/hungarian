@@ -1,0 +1,1 @@
+function f(c){if(c<2000)t=Math.ceil(c/100)*100;else if(c<5000)t=Math.ceil(c/500)*500;else t=Math.round(Math.floor(c*1.1)/500)*500;t-=c;if(t==0||t>1500)a="PAID BY CARD";else if(t%100!=0)a="KEEP THE CHANGE YOU FILTY ANIMAL";else a="HERE IS "+(c+t);console.log(a);};

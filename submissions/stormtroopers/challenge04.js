@@ -1,0 +1,1 @@
+function f(s){w=["123","456","789","147","258","369","159","357"],c=console;try{for(i in s){l=s[i];for(j in w){q=w[j].replace(new RegExp(l),"OX"[i%2]);w[j]=q;if(q=="XXX"||q=="OOO")throw q[0];}}c.log("?")}catch(e){c.log(e)}}

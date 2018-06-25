@@ -1,0 +1,2 @@
+private static void f(int c){int t;int f;if(c<2000){f=((c+99)/100)*100;}else if(c>2000&&c<5000){f=((c+499)/500)*500;}else{f=(int)(500*(Math.round((Math.floor(c*1.1)/500))));}
+t=f-c;if(t==0||t>1500){System.out.println("PAID BY CARD");}else if(t%100!=0){System.out.println("KEEP THE CHANGE YOU FILTY ANIMAL");}else{System.out.println("HERE IS "+f);}}

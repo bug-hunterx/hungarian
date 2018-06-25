@@ -1,0 +1,6 @@
+
+
+"piranha Princess piranha"
+
+CODEGOLF_METHOD_PLACEHOLDER
+

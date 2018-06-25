@@ -1,0 +1,1 @@
+static void f(int c){int t=0,p=500;PrintStream s=System.out;if(c<p*4){t=(((c+99)/100)*p/5)-c;c+=t;}else if(c<p*10){t=(((c+499)/p)*p)-c;c += t;}else{t=(int)(c*0.1);int o=c;c=(int)(((float)(c+t)/p)+0.5)*p;t=c-o;}if(t==0||t>p*3) s.println("PAID BY CARD");else if(t%100>0)s.println("KEEP THE CHANGE YOU FILTY ANIMAL");else s.println("HERE IS "+c);}

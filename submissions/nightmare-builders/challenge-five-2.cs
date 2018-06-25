@@ -1,0 +1,1 @@
+static void f(String s){for(int i=0;i<99;i++){s=Regex.Replace(s,"/(\\s|$)","__");s=Regex.Replace(s,"(\\s|^)\\\\", "__");s=s.Replace("/||\\","//\\\\");s=Regex.Replace(s,"/[|]+($|_|/|\\|| )",delegate(Match m){return m.Value.Replace("/|","//");});s=Regex.Replace(s,"(^|_|\\\\|\\|| )[|]+\\\\",delegate(Match m){return m.Value.Replace("|\\","\\\\");});}Console.Write(s);}

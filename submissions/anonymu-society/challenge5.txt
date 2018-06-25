@@ -1,0 +1,126 @@
+package hacklathon;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class challenge5 {
+
+	public static void main(String[] args) {
+
+		// f("///|\\\\\\"); // => ///|\\\
+		// f("| \\\\"); // => |__\
+		// f("// |"); // => /__|
+		f("|/ \\|/ \\|/ \\|/ \\|"); // => |__\|__\|__\|__\|
+		// f("/||||"); // => ////__
+		// f("/| /|"); // => /__/__
+		// f("__\\\\ //__ //|\\\\ //__|__\\\\ |||||____"); // => __\\ //__ //|\\
+		// // //__|__\\
+		// // |||||____
+
+		// f("||\\/||"); // => __\\//__
+
+		// f("/||||\\"); // =>
+
+	}
+
+	static void f(String s) {
+
+		// if (s.trim().startsWith("||\\")) {
+		// s = s.replaceFirst("\\|\\|\\\\", "__\\\\\\\\");
+		// }
+
+		StringBuilder dominos = new StringBuilder(" ");
+		dominos.append(s);
+		dominos.append(' ');
+
+		char leftToMe = ' ';
+		char me = dominos.charAt(0);
+		char rightToMe = ' ';
+		for (int z = 0; z < (dominos.length() / 2) - 1; z++) {
+			for (int i = 0; i < (dominos.length() / 2) - 1; i++) {
+				for (int k = 0; k < 2; k++) {
+
+					int j = i;
+
+					if (k == 1) {
+						j = dominos.length() - 2 - i;
+					}
+					me = dominos.charAt(j);
+
+					if (j != 0) {
+						leftToMe = dominos.charAt(j - 1);
+
+					}
+
+					if (j < dominos.length()) {
+
+						rightToMe = dominos.charAt(j + 1);
+
+					}
+
+					if (me == ' ') {
+						if (leftToMe == '/') {
+							dominos.setCharAt(j, '_');
+							dominos.setCharAt(j - 1, '_');
+						}
+						if (rightToMe == '\\') {
+							dominos.setCharAt(j, '_');
+							dominos.setCharAt(j + 1, '_');
+						}
+					}
+
+					if (me == '/') {
+						if (rightToMe == ' ') {
+							dominos.setCharAt(j, '_');
+							dominos.setCharAt(j + 1, '_');
+						}
+					}
+
+					if (me == '\\') {
+
+						if (leftToMe == ' ') {
+							
+							if (dominos.charAt(j - 2) != '/') {
+
+								dominos.setCharAt(j, '_');
+
+							}
+							if (dominos.charAt(j - 2) == '/') {
+
+								dominos.setCharAt(j, '\\');
+
+							}
+						}
+
+					}
+
+					if (me == '|') {
+						if (leftToMe == '/') {
+							if (rightToMe == ' ') {
+								dominos.setCharAt(j, '_');
+								dominos.setCharAt(j + 1, '_');
+							} else if (rightToMe == '\\') {
+								dominos.setCharAt(j, '|');
+
+							} else {
+								dominos.setCharAt(j, '/');
+							}
+						} else if (rightToMe == '\\') {
+							if (leftToMe == ' ') {
+								dominos.setCharAt(j, '_');
+								dominos.setCharAt(j - 1, '_');
+
+							} else {
+								dominos.setCharAt(j, '\\');
+							}
+						}
+
+					}
+				}
+			}
+
+		}
+		System.out.println(dominos);
+
+	}
+}

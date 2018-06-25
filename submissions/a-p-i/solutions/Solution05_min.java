@@ -1,0 +1,2 @@
+static void f(String s){String n="";while(!s.equals(n)){n=s;s=s.replace("||\\","|\\\\").replace("/||","//|").replace("/ ","__").replace(" |\\","__\\").replace("/| ","/__").replace(" \\","__").replaceAll("/\\|$","/__").replaceAll("^(\\|)(\\\\)","__\\\\");}
+System.out.println(n);}
